@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/layout/news_item_layout.xml -->
+
+<!-- res/layout/news_item_layout.xml -->
+
+<!-- res/layout/news_item_layout.xml -->
+
+<androidx.cardview.widget.CardView
+    android:id="@+id/container"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:background="@drawable/rounded_corner_bg">
+
+    <!-- Your news item content goes here -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- News item image -->
+        <ImageView
+            android:id="@+id/imageViewNews"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/placeholder"
+            android:scaleType="centerCrop"
+            android:background="@drawable/rounded_corner_bg_image"/>
+
+        <!-- News item title -->
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/imageViewNews"
+            android:layout_marginStart="16dp"
+            android:text="News Title"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"/>
+
+        <!-- News item description -->
+        <TextView
+            android:id="@+id/textViewDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewTitle"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@id/imageViewNews"
+            android:layout_marginStart="16dp"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            android:textColor="@android:color/darker_gray"/>
+
+        <TextView
+            android:paddingBottom="8dp"
+            android:id="@+id/textViewSources"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewDescription"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@id/imageViewNews"
+            android:layout_marginStart="16dp"
+            android:text="Source"
+            android:textColor="@android:color/holo_blue_light"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

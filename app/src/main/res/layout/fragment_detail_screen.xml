@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/layout/news_detail_layout.xml -->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- News Image -->
+    <ImageView
+        android:id="@+id/newsImageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/placeholder"
+        android:contentDescription="News Image"
+        android:background="@android:color/darker_gray"/>
+
+    <!-- News Title -->
+    <TextView
+        android:id="@+id/newsTitleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:text="News Title"
+        android:textColor="@color/white"/>
+
+    <!-- News Description -->
+    <TextView
+        android:id="@+id/newsDescriptionTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas..."
+        android:textColor="@color/white"/>
+
+    <!-- Read More Button -->
+   <!-- <Button
+        android:id="@+id/readMoreButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Read More"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/colorAccent"
+        android:layout_marginTop="16dp"/> -->
+</LinearLayout>

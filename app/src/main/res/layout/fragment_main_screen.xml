@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.ui.MainScreen">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:elevation="4dp"
+        android:theme="?attr/actionBarTheme">
+       <!-- <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:text="News"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" /> -->
+        <!-- Search icon -->
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/searchView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:iconifiedByDefault="false"
+            android:queryHint="Search"
+            android:theme="@style/Widget.AppCompat.SearchView" />
+
+
+        <!-- Title or other views can be added here -->
+
+
+    </androidx.appcompat.widget.Toolbar>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/categoryRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:paddingStart="8dp"
+        android:layout_below="@id/toolbar"
+        android:paddingEnd="8dp"
+        android:overScrollMode="never"
+        android:nestedScrollingEnabled="false"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/categoryRecyclerView"
+        tools:listitem="@layout/news_item_layout" />
+
+</RelativeLayout>
